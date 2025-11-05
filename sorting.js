@@ -47,7 +47,7 @@ function drawGraph(values, highlight = []) {
   for (let i = 0; i < n; i += step) {
     const val = values[i];
     const color = highlight.includes(i)
-      ? "white"
+      ? "rgb(76, 213, 228)"
       : interpolateColor(val, minVal, maxVal);
     const barHeight = (val - minVal) / (maxVal - minVal + 1) * (height - 20);
     ctx.fillStyle = color;
